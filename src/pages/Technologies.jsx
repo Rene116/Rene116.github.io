@@ -146,7 +146,7 @@ export function Technologies() {
             <th>NAME</th>
             <th>SECTOR</th>
             <th>DESCRIPTION</th>
-            <th>ADOPTION STAGE</th>
+            <th className='adoption'>ADOPTION STAGE</th>
             <th>ACTIONS</th>
           </tr>
         </thead>
@@ -157,7 +157,7 @@ export function Technologies() {
                 <td>{t.name}</td>
                 <td>{t.sector}</td>
                 <td>{t.description}</td>
-                <td>{t.adoption_stage}</td>
+                <td className='adoption'>{t.adoption_stage}</td>
                 <td>
                   <button onClick={() => handleEdit(t)} className="info">
                     Edit
@@ -170,7 +170,7 @@ export function Technologies() {
             );
           })}
         </tbody>
-      </table>
+      </table> 
     </div>
   );
 }

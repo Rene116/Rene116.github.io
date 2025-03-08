@@ -115,11 +115,6 @@ button {
   border-collapse: separate;
   border-spacing: 30px;
   font-size: 20px;
-
-  width: 10px;
-  max-width: calc(100% - 20px);
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .tabla-data {
@@ -165,18 +160,30 @@ button {
     }
   }
 
-  table thead {
-    width: 50%;
+  table {
     border-collapse: separate;
-    border-spacing: 30px;
+    border-spacing: 5px;
+  }
+
+  table thead {
+    font-size: 10px;
+  }
+  .tabla-data td {
     font-size: 10px;
   }
   .location,
   .category {
     display: none;
   }
-  
+
+  button {
+    font-size: 10px;
+  }
+  .adoption {
+    display: none;
+  }
 }
+
 .filter {
   h3 {
     text-align: center;
